@@ -9,6 +9,27 @@
   </head>
 
   <body>
+  <div id="sidebar">
+  	<div id="logo">
+  		<%= link_to root_path do %>
+  			<%= image_tag "logo.svg" %>
+  		<% end %>
+  	</div>
+
+  	<ul>
+	  	<li class="category">Website</li>
+	  	<li><%= link_to "Blog", root_path %></li>
+	  	<li>About</li>
+  	</ul>
+
+  	<ul>
+  		<li class="category">Social</li>
+  		<li><a href="https://www.twitter.com">Twitter</a></li>
+  		<li><a href="http://www.instagram.com">Instagram</a></li>
+  		<li><a href="http://www.github.com">Github</a></li>
+  		<li><a href="mailto:nickgorajski@gmail.com">Email</a></li>
+  	</ul>
+  </div>
     <%= yield %>
   </body>
 </html>
